@@ -1,0 +1,19 @@
+<html lang="en">
+    <head>
+        <title>Canvaaaaaaaaaaaas</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+    <div>
+        <canvas id="sketch" width="500" height="500"></canvas>
+    </div>
+    <script>
+        const script = document.createElement("script");
+        script.src = 'http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1';
+        document.body.appendChild(script);
+        // document.body.insertAdjacentHTML('beforeend','<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        //     ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    <script src="js/sketch.js"></script>
+    </body>
+</html>
