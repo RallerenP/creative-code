@@ -2,11 +2,11 @@
     <head>
         <title>Canvaaaaaaaaaaaas</title>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+        <script src="js/keyboard.js"></script>
     </head>
     <body>
     <div>
-        <canvas id="sketch"></canvas>
+        <canvas id="sketch" width="500" height="500"></canvas>
     </div>
     <script>
         const script = document.createElement("script");
@@ -15,11 +15,7 @@
         // document.body.insertAdjacentHTML('beforeend','<script src="http://' + (location.host || 'localhost').split(':')[0] +
         //     ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
-    <script src="js/matter.js"></script>
-    <script src="js/extend.js"></script>
-    <script src="js/Objects/Clock.js"></script>
-    <script src="js/Objects/FakeClock.js"></script>
-    <script src="js/Objects/Ground.js"></script>
+     <script src="js/ctx_extend.js"></script>
     <script src="js/sketch.js"></script>
     </body>
 </html>
