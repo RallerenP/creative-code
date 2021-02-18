@@ -7,10 +7,14 @@ class FakeClock {
 
         document.body.addEventListener("mouseup", (e) => {
             clocks.push(this.toClock());
+            inflate.stop();
+            pop.play();
             fakeClock = null;
 
             document.body.addEventListener("mousedown", (e) => {
+                inflate.play();
                 fakeClock = new FakeClock(e.clientX, e.clientY, 20, ctx);
+                
             }, {once: true});
 
         }, {once: true});

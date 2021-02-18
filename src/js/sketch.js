@@ -6,6 +6,16 @@ const clack = new Howl({
     volume: 0.15
 });
 
+const inflate = new Howl({
+    src: '/sounds/inflate.mp3',
+    volume: 0.15
+})
+
+const pop = new Howl({
+    src: '/sounds/pop.mp3',
+    volume: 0.15
+})
+
 window.onload = setup;
 
 let width;
@@ -51,6 +61,12 @@ function draw() {
     // ctx.fillRect(box.position.x, box.position.y, 80, 80)
 
     ctx.background(0)
+
+    ctx.font = 100 * 0.15 + "px arial";
+    ctx.fillStyle = "#FFFFFF"
+    ctx.textBaseline = "left";
+    ctx.textAlign = "left";
+    ctx.fillText("Sound effects obtained from https://www.zapsplat.com", 25, 25)
 
 
 
