@@ -4,14 +4,16 @@ class Ground {
         this.body.friction = 1;
         this.body.frictionStatic = 10;
 
+        const wallLeft = Bodies.rectangle(-10, height / 2, 20, height, {isStatic: true});
+        const wallTop = Bodies.rectangle(width / 2, -10, width, 20, {isStatic: true});
+        const wallRight = Bodies.rectangle(width + 10, height / 2, 20, height, {isStatic: true});
+        console.log(wallLeft);
 
-        World.add(world, this.body)
+
+        World.add(world, [this.body, wallLeft, wallRight, wallTop])
     }
 
     draw() {
-        const x = this.body.position.x - width / 2;
-        const y = this.body.position.y;
-
-        ctx.fillRect(x, y, width, 20)
+       
     }
 }
